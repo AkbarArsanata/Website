@@ -118,7 +118,7 @@ async function renderCertificates(category) {
         document.getElementById('shown-count').textContent = showAll ? items.length : Math.min(8, items.length);
         document.getElementById('total-count').textContent = items.length;
 
-        const limit = showAll ? items.length : 3;
+        const limit = showAll ? items.length : 8;
         certificateGrid.innerHTML = "";
         
         for (let i = 0; i < Math.min(limit, items.length); i++) {
